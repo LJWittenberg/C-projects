@@ -1,0 +1,26 @@
+\begin{theindex}
+
+  \item {argparse\_int}
+    \subitem {sub\_function.c}, \hyperpage{3}
+    \subitem {sub\_function.h}, \hyperpage{4}
+
+  \indexspace
+
+  \item {main}
+    \subitem {sub\_function\_test.c}, \hyperpage{6}
+
+  \indexspace
+
+  \item {sub}
+    \subitem {sub\_function.c}, \hyperpage{4}
+    \subitem {sub\_function.h}, \hyperpage{5}
+  \item {sub\_function.c}, \hyperpage{3}
+    \subitem {argparse\_int}, \hyperpage{3}
+    \subitem {sub}, \hyperpage{4}
+  \item {sub\_function.h}, \hyperpage{4}
+    \subitem {argparse\_int}, \hyperpage{4}
+    \subitem {sub}, \hyperpage{5}
+  \item {sub\_function\_test.c}, \hyperpage{5}
+    \subitem {main}, \hyperpage{6}
+
+\end{theindex}
