@@ -1,0 +1,22 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n+nf}{count\PYGZus{}live\PYGZus{}neighbours}\PYG{p}{(}\PYG{k}{struct}\PYG{+w}{ }\PYG{n+nc}{board}\PYG{+w}{ }\PYG{n}{game}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{cur\PYGZus{}row}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{cur\PYGZus{}col}\PYG{p}{)\PYGZob{}}
+\PYG{+w}{        }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{count}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{;}
+\PYG{+w}{		}\PYG{c+c1}{// Über die for\PYGZhy{}loops werden alle benachbarten Zellen überprüft.}
+\PYG{+w}{                }\PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{i}\PYG{o}{=}\PYG{n}{cur\PYGZus{}row}\PYG{l+m+mi}{\PYGZhy{}1}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{i}\PYG{+w}{ }\PYG{o}{\PYGZlt{}=}\PYG{+w}{ }\PYG{n}{cur\PYGZus{}row}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{i}\PYG{o}{++}\PYG{p}{)\PYGZob{}}
+\PYG{+w}{                        }\PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{j}\PYG{o}{=}\PYG{n}{cur\PYGZus{}col}\PYG{l+m+mi}{\PYGZhy{}1}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{j}\PYG{+w}{ }\PYG{o}{\PYGZlt{}=}\PYG{+w}{ }\PYG{n}{cur\PYGZus{}col}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{j}\PYG{o}{++}\PYG{p}{)\PYGZob{}}
+\PYG{+w}{                                }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{proceed\PYGZus{}check}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{cell\PYGZus{}in\PYGZus{}grid}\PYG{p}{(}\PYG{n}{game}\PYG{p}{,}\PYG{n}{i}\PYG{p}{,}\PYG{n}{j}\PYG{p}{);}
+\PYG{+w}{                                }\PYG{k}{if}\PYG{p}{(}\PYG{n}{proceed\PYGZus{}check}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{)\PYGZob{}}
+\PYG{+w}{                                        }\PYG{k}{if}\PYG{p}{(}\PYG{n}{game}\PYG{p}{.}\PYG{n}{current\PYGZus{}cells}\PYG{p}{[}\PYG{n}{i}\PYG{p}{][}\PYG{n}{j}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{)\PYGZob{}}
+\PYG{+w}{                                                }\PYG{n}{count}\PYG{o}{++}\PYG{p}{;}
+\PYG{+w}{                                        }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{                                }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{                        }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{                }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{                }\PYG{c+cm}{/* Die betrachtete Zelle soll bei der Zählung nicht berücksichtigt}
+\PYG{c+cm}{		 * werden.}
+\PYG{c+cm}{		 */}
+\PYG{+w}{                }\PYG{k}{if}\PYG{p}{(}\PYG{n}{game}\PYG{p}{.}\PYG{n}{current\PYGZus{}cells}\PYG{p}{[}\PYG{n}{cur\PYGZus{}row}\PYG{p}{][}\PYG{n}{cur\PYGZus{}col}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{)\PYGZob{}}
+\PYG{+w}{                        }\PYG{n}{count}\PYG{o}{\PYGZhy{}\PYGZhy{}}\PYG{p}{;}
+\PYG{+w}{                }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{        }\PYG{k}{return}\PYG{+w}{ }\PYG{n}{count}\PYG{p}{;}
+\end{Verbatim}

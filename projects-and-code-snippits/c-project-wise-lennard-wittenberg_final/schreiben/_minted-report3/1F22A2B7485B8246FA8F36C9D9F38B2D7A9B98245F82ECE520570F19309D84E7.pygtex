@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{        }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{game\PYGZus{}acctive}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{+w}{        }\PYG{k}{while}\PYG{p}{(}\PYG{n}{game\PYGZus{}acctive}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{)\PYGZob{}}
+\PYG{+w}{                }\PYG{n}{print\PYGZus{}game}\PYG{p}{(}\PYG{n}{game}\PYG{p}{);}
+\PYG{+w}{                }\PYG{n}{sleep}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{);}
+\PYG{+w}{                }\PYG{n}{enforce\PYGZus{}rules}\PYG{p}{(}\PYG{n}{game}\PYG{p}{);}
+\PYG{+w}{                }\PYG{n}{swap\PYGZus{}cell\PYGZus{}states}\PYG{p}{(}\PYG{n}{game}\PYG{p}{);}
+\PYG{+w}{                }\PYG{n}{game\PYGZus{}acctive}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{check\PYGZus{}dead\PYGZus{}life}\PYG{p}{(}\PYG{n}{game}\PYG{p}{);}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{        }\PYG{n}{delete\PYGZus{}board}\PYG{p}{(}\PYG{n}{game}\PYG{p}{);}
+\end{Verbatim}

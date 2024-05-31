@@ -1,0 +1,26 @@
+\begin{theindex}
+
+  \item {board}, \hyperpage{7}
+
+  \indexspace
+
+  \item {cmdargs}, \hyperpage{7}
+  \item {cmdargs.c}, \hyperpage{9}
+    \subitem {cmdargs\_parse}, \hyperpage{9}
+  \item {cmdargs.h}, \hyperpage{10}
+    \subitem {cmdargs\_parse}, \hyperpage{11}
+  \item {cmdargs\_parse}
+    \subitem {cmdargs.c}, \hyperpage{9}
+    \subitem {cmdargs.h}, \hyperpage{11}
+
+  \indexspace
+
+  \item {gol\_board\_test.c}, \hyperpage{12}
+    \subitem {main}, \hyperpage{13}
+
+  \indexspace
+
+  \item {main}
+    \subitem {gol\_board\_test.c}, \hyperpage{13}
+
+\end{theindex}

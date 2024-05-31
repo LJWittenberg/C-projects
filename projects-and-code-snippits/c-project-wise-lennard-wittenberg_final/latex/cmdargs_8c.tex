@@ -1,0 +1,49 @@
+\hypertarget{cmdargs_8c}{}\doxysection{cmdargs.\+c File Reference}
+\label{cmdargs_8c}\index{cmdargs.c@{cmdargs.c}}
+{\ttfamily \#include \char`\"{}cmdargs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gol\+\_\+board.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$ctype.\+h$>$}\newline
+Include dependency graph for cmdargs.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{cmdargs_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{cmdargs_8c_a339e0b5f874b189764d9b7986909e9e0}{cmdargs\+\_\+parse}} (struct \mbox{\hyperlink{structcmdargs}{cmdargs}} $\ast$\mbox{\hyperlink{structcmdargs}{cmdargs}}, int argc, char $\ast$argv\mbox{[}$\,$\mbox{]}, int r, int c)
+\item 
+\mbox{\Hypertarget{cmdargs_8c_a54e853e29eabf6661d6c6da69b34cacb}\label{cmdargs_8c_a54e853e29eabf6661d6c6da69b34cacb}} 
+int {\bfseries argparse\+\_\+int} (char $\ast$str)
+\item 
+\mbox{\Hypertarget{cmdargs_8c_a103f8c78d084ed2515b766d3effa051c}\label{cmdargs_8c_a103f8c78d084ed2515b766d3effa051c}} 
+void {\bfseries delete\+\_\+buffer} (struct \mbox{\hyperlink{structcmdargs}{cmdargs}} game)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{cmdargs_8c_a339e0b5f874b189764d9b7986909e9e0}\label{cmdargs_8c_a339e0b5f874b189764d9b7986909e9e0}} 
+\index{cmdargs.c@{cmdargs.c}!cmdargs\_parse@{cmdargs\_parse}}
+\index{cmdargs\_parse@{cmdargs\_parse}!cmdargs.c@{cmdargs.c}}
+\doxysubsubsection{\texorpdfstring{cmdargs\_parse()}{cmdargs\_parse()}}
+{\footnotesize\ttfamily int cmdargs\+\_\+parse (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structcmdargs}{cmdargs}} $\ast$}]{cmdargs,  }\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]},  }\item[{int}]{r,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+Parse the given command line arguments into the cmdargs struct.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmdargs} & \\
+\hline
+{\em argc} & the size of argv as supplied in \mbox{\hyperlink{gol__board__test_8c_a3c04138a5bfe5d72780bb7e82a18e627}{main()}}. \\
+\hline
+{\em argv} & the the array of arguments as supplied in \mbox{\hyperlink{gol__board__test_8c_a3c04138a5bfe5d72780bb7e82a18e627}{main()}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 on success, 0 on failure. 
+\end{DoxyReturn}
