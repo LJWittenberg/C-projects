@@ -20,7 +20,7 @@ note: The rules and specialties of this project are detailed in the file placerh
 [![pipeline status](https://gitlab.rz.htw-berlin.de/Lennard.Wittenberg/c-wise-lennard-wittenberg/badges/main/pipeline.svg)](https://gitlab.rz.htw-berlin.de/Lennard.Wittenberg/c-wise-lennard-wittenberg/-/commits/main)
 
 
-
+note: one directory is currently missing --> project incomplete
 
 
 
